@@ -36,6 +36,12 @@ header nav a:link {
     text-decoration: none;
 }
 
+/* visited link */
+header nav a:visited {
+    color: black;
+    text-decoration: none;
+}
+
 /* unvisited link */
 main a:link {
     color: black;
@@ -44,7 +50,7 @@ main a:link {
 
 /* visited link */
 main a:visited {
-    color: green;
+    color: black;
 }
 
 /* mouse over link */
@@ -54,6 +60,11 @@ main a:hover {
 
 /* selected link */
 main a:active {
-    color: blue;
+    color: white;
 }
 
+/*-----------------------------------------------MAIN--------*/
+
+main div.container {
+	width: 350px;
+}
