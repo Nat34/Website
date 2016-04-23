@@ -1,6 +1,6 @@
 main, header {
 	mid-width: 855px;
-	font-family: "courier", Monospace;
+	font-family: "Courier", Monospace;
 }
 
 /*---------------------------------------------HEADER--------*/
@@ -21,17 +21,21 @@ header nav {
 }
 
 p.header {
-	font-size: 2em;
+	font-size: 36px;
+}
+
+p.ma {
+	font-size: 26px;
 }
 
 main {
-	height: 490px;
-/*	border-style: solid;
+	height: 550px;
+	border-style: solid;
 	border-width: medium;
-	border-color: pink;*/
+	border-color: pink;
 	margin-right: 15px;
     margin-left: 15px;
-	padding: 100px;
+	padding: 50px;
 }
 
 /*-----------------------------------------------LINKS--------*/
@@ -74,6 +78,7 @@ main a:active {
 main div.container-left {
 	float: left;
 	width: 350px;
+	margin-left: 40px;
 /*	border-style: solid;
 	border-width: medium;
 	border-color: pink;*/
@@ -82,7 +87,7 @@ main div.container-left {
 main div.container-right {
 	float: right;
 	width: 650px;
-	height:450px;
+	height:500px;
 /*	border-style: solid;
 	border-width: medium;
 	border-color: pink;*/
