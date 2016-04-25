@@ -88,7 +88,7 @@ main a:active {
     color: white;
 }
 
-/*-----------------------------------------------MAIN--------*/
+/*------------------------------------------------MAIN INDEX--*/
 
 main div.container-left {
 	float: left;
@@ -135,7 +135,27 @@ main div.container-libarc-right {
 	border-color: pink;*/
 }
 
-/*-----------------------------------------------BUTTONS--*/
+/*-----------------------------------------------MAIN ABOUT--*/
+
+main div.container-about-left {
+	float: left;
+	width: 60%;
+	/*border-style: solid;
+	border-width: medium;
+	border-color: pink;*/
+}
+
+main div.container-about-right {
+	float: right;
+	width: 30%;
+	margin-top: 100px;
+	margin-right: 50px;
+	/*border-style: solid;
+	border-width: medium;
+	border-color: pink;*/
+}
+
+/*------------------------------------------------BUTTONS--*/
 
 .button {
 	font-family: "Open Sans";
@@ -179,7 +199,18 @@ main div.container-libarc-right {
 }
 
 .lgbtqi1:hover, .lgbtqi2:hover, .lgbtqi3:hover {
-	background-color: #e7e7e7;}
+	background-color: #e7e7e7;
+}
+
+.about1, .about2 {
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+}
+
+.about1:hover, .about2:hover {
+	background-color: #e7e7e7;
+}
 
 /*-----------------------------------------------LISTS--*/
 
@@ -194,6 +225,11 @@ ul.archives {
 }
 
 ul.lgbtqi {
+	list-style-type:none;
+	padding-left:0;
+}
+
+ul.about {
 	list-style-type:none;
 	padding-left:0;
 }

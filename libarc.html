@@ -3,45 +3,59 @@
 	<head>
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 		<title>Nathan Thomas | Libraries + Archives</title>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 		<link href="stylesheets/reset.css" rel="stylesheet" type="text/css">
 		<link href="stylesheets/style.css" rel="stylesheet" type="text/css">
 	</head>
-
 	<body>
-	<header>
+		<header>
 			<p class="header"><a href="index.html">NATHAN THOMAS</a></p>
 			<nav>
 				<a href="index.html">Home</a> |
 				<a href="about.html">About</a> |
-				<a href="https://github.com/Nat34">Github</a>
+				<a href="https://github.com/Nat34" target="_blank">Github</a>
 			</nav>
 		</header>
-	<main>
+		<main>
 		<div class="container">
 			<div class="container-libarc-left">
 				<p class="ma">LIBRARIES</p>
-					<p class="center-libarc" style="font-family: Open Sans">Books are technology.  Books have a standardized structure.  Books are autonomous.  Libraries hold books.  Libraries hold data about books. I am interested in accessing, parsing, automating, wrangling and analzing this data.</p>
+				<p class="center-libarc" style="font-family: Open Sans; margin-bottom:3.6em;">Books are technology.  Books have a standardized structure.  Books are autonomous.  Libraries hold books.  Libraries hold data about books. I am interested in accessing, parsing, automating, wrangling and analzing this data.</p>
+				<div id="accordion">
 					<ul class="libraries">
 						<li><button class="button libraries1">Reference and Instruction</button></li>
 						<li><button class="button libraries2">XML and JSON</button></li>
 						<li><button class="button libraries3"><li>Python</button</li>
-					</ul></div>
+					</ul>
+				</div>
+			</div>
 			<div class="container-libarc-center">
 				<p class="ma">ARCHIVES</p>
-					<p class="center-libarc" style="margin-bottom:2.1em;">Quaerat porro eius hic. Et enim fugit dignissimos. Magni ab id ipsam. Rerum maxime voluptas ratione omnis cum tenetur. Sed molestias ut et corporis amet. Esse totam in est assumenda voluptas est.</p>
-					<ul class="libraries">
-						<li><button class="button archives1">Digital Asset Management Systems</button></li>
-						<li><button class="button archives2">Digital Tools</button></li>
-						<li><button class="button archives3">Alternative and Community Archives</button></li>
-					</ul></div>
+				<p class="center-libarc" style="margin-bottom:2.1em;">Archives embrace materials that lack a standardized structure.  These materials come in all sizes, formats, and physical composition.  I am interested in the digital tools which enable discovery, aggregration and dissemintation of these materials and their context.</p>
+				<ul class="libraries">
+					<li><button class="button archives1">Digital Asset Management Systems</button></li>
+					<li><button class="button archives2">JQuery</button></li>
+					<li><button class="button archives3">Digital Repositories</button></li>
+				</ul>
+			</div>
 			<div class="container-libarc-right">
 				<p class="ma">LGBTQI</p>
-					<p class="center-libarc" style="margin-bottom:2.2em;">Quaerat porro eius hic. Et enim fugit dignissimos. Magni ab id ipsam. Rerum maxime voluptas ratione omnis cum tenetur. Sed molestias ut et corporis amet. Esse totam in est assumenda voluptas est.</p>
-					<ul class="lgbtqi">
-						<li><button class="button lgbtqi1">Inclusive Library Practices</button></li>
-						<li><button class="button lgbtqi2">Alternative Archives</button></li>
-						<li><button class="button lgbtqi3">Censorship</button></li>
-					</ul></div>
-		</div>
-	</main>
-</html>
+				<p class="center-libarc" style="margin-bottom:3.5em;">Libraries and archives have long been at the forefront of the equalities landscape, providing a place where people of diverse sexuality and gender can freely access resources and information.</p>
+				<ul class="lgbtqi">
+					<li><button class="button lgbtqi1">Inclusive Library Practices</button></li>
+					<li><button class="button lgbtqi2">Censorship</button></li>
+					<li><button class="button lgbtqi3">Alternative and Community Archives</button></li>
+				</ul></div>
+			</div>
+			</main>
+			<script>
+			$(function() {
+			$( "#accordion" ).accordion({
+			collapsible: true
+			});
+			});
+			</script>
+		</body>
+	</html>
