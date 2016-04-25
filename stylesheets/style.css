@@ -1,6 +1,5 @@
 main, header {
-	mid-width: 855px;
-	font-family: "Courier", Monospace;
+	font-family: "Open Sans", Monospace;
 }
 
 /*---------------------------------------------HEADER--------*/
@@ -28,6 +27,11 @@ p.ma {
 	font-size: 26px;
 }
 
+p.center-libarc {
+	font-family: "Open Sans";
+	text-align:none;
+}
+
 main {
 	height: 550px;
 	border-style: solid;
@@ -39,6 +43,17 @@ main {
 }
 
 /*-----------------------------------------------LINKS--------*/
+/* unvisited link */
+header p.header a:link {
+    color: black;
+    text-decoration: none;
+}
+
+/* visited link */
+header p.header a:visited {
+    color: black;
+    text-decoration: none;
+}
 
 /* unvisited link */
 header nav a:link {
@@ -78,7 +93,7 @@ main a:active {
 main div.container-left {
 	float: left;
 	width: 350px;
-	margin-left: 40px;
+	margin: 40px 0px 0px 40px;
 /*	border-style: solid;
 	border-width: medium;
 	border-color: pink;*/
@@ -91,4 +106,94 @@ main div.container-right {
 /*	border-style: solid;
 	border-width: medium;
 	border-color: pink;*/
+}
+
+/*-----------------------------------------------MAIN LIBARC--*/
+
+main div.container-libarc-left {
+	float: left;
+	width: 30%;;
+	/*border-style: solid;
+	border-width: medium;
+	border-color: pink;*/
+}
+
+main div.container-libarc-center {
+	margin-left: 5%;
+	display: inline-block; 
+	width: 30%;
+	/*border-style: solid;
+	border-width: medium;
+	border-color: pink;*/
+}
+
+main div.container-libarc-right {
+	float: right;
+	width: 30%;
+	/*border-style: solid;
+	border-width: medium;
+	border-color: pink;*/
+}
+
+/*-----------------------------------------------BUTTONS--*/
+
+.button {
+	font-family: "Open Sans";
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.libraries1, .libraries2, .libraries3 {
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+}
+
+.libraries1:hover,.libraries2:hover,.libraries3:hover {
+	background-color: #e7e7e7;}
+
+.archives1, .archives2, .archives3 {
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+}
+
+.archives1:hover,.archives2:hover,.archives3:hover {
+	background-color: #e7e7e7;}
+
+.lgbtqi1, .lgbtqi2, .lgbtqi3 {
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+}
+
+.lgbtqi1:hover, .lgbtqi2:hover, .lgbtqi3:hover {
+	background-color: #e7e7e7;}
+
+/*-----------------------------------------------LISTS--*/
+
+ul.libraries {
+	list-style-type:none;
+	padding-left:0;
+}
+
+ul.archives {
+	list-style-type:none;
+	padding-left:0;
+}
+
+ul.lgbtqi {
+	list-style-type:none;
+	padding-left:0;
 }
