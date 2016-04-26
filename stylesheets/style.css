@@ -23,6 +23,8 @@ p.header {
 	font-size: 36px;
 }
 
+/*---------------------------------------------MAIN--------*/
+
 p.ma {
 	font-size: 26px;
 }
@@ -153,6 +155,25 @@ main div.container-about-right {
 	/*border-style: solid;
 	border-width: medium;
 	border-color: pink;*/
+}
+
+/*-----------------------------------------------MAIN RESEARCH--*/
+
+main div.container-research-left {
+	display: inline-block;
+    width:  400px;
+    height: 100px;
+    margin: 10px;
+    text-align: center;
+	border: medium solid pink;
+}
+
+main div.container-research-right {
+	float: right;
+	width: 60%;
+	border-style: solid;
+	border-width: medium;
+	border-color: pink;
 }
 
 /*------------------------------------------------BUTTONS--*/
