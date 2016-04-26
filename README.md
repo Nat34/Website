@@ -1,3 +1,3 @@
 ###### Website
 
-* learn about my my art practice, my involvment in the fields of library, archive and information science, research interests and web coding projects.
+* learn about my art practice, library, archive and information science studies, web coding projects and research interests.
