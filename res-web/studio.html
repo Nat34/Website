@@ -1,0 +1,323 @@
+<!doctype html>
+<html>
+	<head>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+		<title>Nathan Thomas | Studio</title>
+		<link href="stylesheets/reset.css" rel="stylesheet" type="text/css">
+		<link href="stylesheets/style.css" rel="stylesheet" type="text/css">
+<style>
+
+p.ma {
+	font-size: 26px;
+}
+
+/* The Image Box */
+div.img {
+  /*  border: 1px solid #ccc;*/
+}
+
+div.img:hover {
+    /*border: 1px solid #777;*/
+}
+
+/* The Image */
+div.img img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+/* Description of Image */
+div.desc {
+	font-family: "Courier", Monospace;
+	font-size: 8px;
+    padding: 15px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Add Responsiveness */
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    /*margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;*/
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0.1)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Responsive Columns */
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+    .modal-content {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+/* Clear Floats */
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.myButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f6f6f6));
+	background:-moz-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:-webkit-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:-o-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:-ms-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0);
+	background-color:#ffffff;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Courier New;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f6f6f6), color-stop(1, #ffffff));
+	background:-moz-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background:-webkit-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background:-o-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background:-ms-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#ffffff',GradientType=0);
+	background-color:#f6f6f6;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+</style>
+
+	</head>
+	<body>
+		<header>
+			<p class="header"><a href="index.html">NATHAN THOMAS</a></p>
+			<nav>
+				<a href="index.html">Home</a> |
+				<a href="about.html">About</a> |
+				<a href="https://github.com/Nat34" target="_blank">Github</a>
+			</nav>
+		</header>
+<body>
+
+<!--Permutation 1 -->
+<div class="responsive">
+  <div class="img">
+      <img src="images/permutation1.png" alt="Permutation 1">
+      	<div class="desc">set 1: 21.940722 , 221.97592 , 11.176765 <br>
+set 2: 231.43326 , 156.05164 , 89.86767 <br>
+set 3: 61.260418 , 177.32779 , 133.85582</div>
+  </div>
+</div>
+
+<!--Permutation 2 -->
+
+<div class="responsive">
+  <div class="img">
+      <img src="images/permutation2.png" alt="Permutation 2">
+      	<div class="desc">set 1: 252.2751 , 226.35922 , 229.2569 <br>
+set 2: 181.9853 , 216.928 , 164.00171 <br>
+set 3: 94.30592 , 42.820282 , 250.74011</div>
+  </div>
+</div>
+
+<!--Permutation 3 -->
+
+<div class="responsive">
+  <div class="img">
+      <img src="images/permutation3.png" alt="Permutation 3">
+      	<div class="desc">set 1: 108.894165 , 164.68723 , 218.3181 <br>
+set 2: 199.06247 , 207.9085 , 11.85281 <br>
+set 3: 45.78116 , 126.23949 , 135.15518</div>
+  </div>
+</div>
+
+<!--Permutation 4 -->
+
+<div class="responsive">
+  <div class="img">
+      <img src="images/permutation4.png" alt="Permutation 4">
+      	<div class="desc">set 1: 155.44272 , 135.92465 , 194.22614 <br>
+set 2: 180.64856 , 157.59341 , 73.47276 <br>
+set 3: 20.051523 , 116.74132 , 42.006</div>
+  </div>
+</div>
+
+<!--Permutation 5 -->
+
+<div class="responsive">
+  <div class="img">
+      <img src="images/permutation5.png" alt="Permutation 5">
+      	<div class="desc">set 1: 221.62067 , 51.993828 , 212.22366 <br>
+set 2: 153.59314 , 6.2393107 , 123.69089 <br>
+set 3: 137.75499 , 211.36313 , 240.44981</div>
+  </div>
+</div>
+
+<!--Permutation 6 -->
+
+<div class="responsive">
+  <div class="img">
+      <img src="images/permutation6.png" alt="Permutation 6">
+      	<div class="desc">set 1: 53.058224 , 195.39642 , 31.289406 <br>
+set 2: 105.17372 , 222.738 , 229.86052 <br>
+set 3: 91.035866 , 249.06654 , 246.85895</div>
+  </div>
+</div>
+
+<!--Permutation 7 -->
+
+<div class="responsive">
+  <div class="img">
+      <img src="images/permutation7.png" alt="Permutation 7">
+      	<div class="desc">set 1: 236.44893 , 37.42883 , 42.740623 <br>
+set 2: 219.68228 , 240.48468 , 128.68341 <br>
+set 3: 233.63997 , 175.70502 , 133.03644</div>
+  </div>
+</div>
+
+<!--Permutation 8 -->
+
+<div class="responsive">
+  <div class="img">
+      <img src="images/permutation8.png" alt="Permutation 8">
+      	<div class="desc">set 1: 1.7672548 , 113.32579 , 229.97435 <br>
+set 2: 232.63446 , 73.92816 , 0.07610232 <br>
+set 3: 131.66376 , 205.18799 , 87.304146</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close"><a href="#" class="myButton">close</a></span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+
+// Get all images and insert the clicked image inside the modal
+// Get the content of the image description and insert it inside the modal image caption
+var images = document.getElementsByTagName('img');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+var i;
+for (i = 0; i < images.length; i++) {
+   images[i].onclick = function(){
+       modal.style.display = "block";
+       modalImg.src = this.src;
+       modalImg.alt = this.alt;
+       captionText.innerHTML = this.nextElementSibling.innerHTML;
+   }
+}
+</script>
+    <script src="http://code.jquery.com/jquery-2.2.3.js"></script>
+    <script src="javascripts/app.js"></script>
+  </body>
+</html>
