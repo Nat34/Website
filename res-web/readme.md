@@ -21,7 +21,7 @@ Task List
 - [ ] Responsive
 - [ ] Accordians
 - [ ] Navigation
-- [ ] Fonts
+- [x] Fonts
 - [ ] Modal
 - [ ] Grid
 - [ ] Libraries
