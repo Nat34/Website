@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+}
+
+/*-------------------------------------UNIVERSE ABOVE--------*/
+
 main, header {
 	font-family: "Open Sans", Monospace;
 }
@@ -35,7 +41,7 @@ p.center-libarc {
 }
 
 main {
-	height: 550px;
+	height: 520px;
 	border-style: solid;
 	border-width: medium;
 	border-color: pink;
@@ -95,7 +101,7 @@ main a:active {
 main div.container-left {
 	float: left;
 	width: 350px;
-	margin: 40px 0px 0px 40px;
+	margin: 0px 0px 0px 40px;
 /*	border-style: solid;
 	border-width: medium;
 	border-color: pink;*/
@@ -103,9 +109,10 @@ main div.container-left {
 
 main div.container-right {
 	float: right;
-	width: 650px;
+	margin-right: 40px;
+	/*width: 650px;
 	height:500px;
-/*	border-style: solid;
+	border-style: solid;
 	border-width: medium;
 	border-color: pink;*/
 }
@@ -254,3 +261,39 @@ ul.about {
 	list-style-type:none;
 	padding-left:0;
 }
+
+/*-----------------------------------------------RESPONSIVE--*/
+
+/* 
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> A
+
+<meta> viewport element gives the browser instructions on how to control the
+page's dimensions and scaling.
+
+The width=device-width part sets the width of the page to follow the screen-
+width of the device (which will vary depending on the device).
+
+The initial-scale=1.0 part sets the initial zoom level when the page is first
+loaded by the browse
+
+
+1. Do NOT use large fixed width elements - For example, if an image is
+displayed at a width wider than the viewport it can cause the viewport to
+scroll horizontally. Remember to adjust this content to fit within the width
+of the viewport.
+
+2. Do NOT let the content rely on a particular viewport width to render well -
+Since screen dimensions and width in CSS pixels vary widely between devices,
+content should not rely on a particular viewport width to render well.
+
+3. Use CSS media queries to apply different styling for small and large
+screens - Setting large absolute CSS widths for page elements, will cause the
+element to be too wide for the viewport on a smaller device. Instead, consider
+using relative width values, such as width: 100%. Also, be careful of using
+large absolute positioning values. It may cause the element to fall outside
+the viewport on small devices.
+
+
+*/
