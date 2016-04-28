@@ -6,7 +6,7 @@ This repository contains practice files.  These files are created while learning
 ## Project: 
 Learn and use a CSS framework 
 ## Drivers: 
-Many if not most view web applications and web apges on mobile phones and tablets
+Many if not most view web applications and web pages on mobile phones and tablets
 ## Technology: 
 W3.CSS, CSS, HyperText Markup Language, Sublime Text Editor, Terminal, Unix Command Line, Web browsers (FireFox, Chrome, Safari, IE.9), Git, GitHub
 ## Resources: 
