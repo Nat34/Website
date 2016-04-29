@@ -5,6 +5,7 @@
 		<title>Nathan Thomas | Libraries + Archives</title>
 		<link href="stylesheets/reset.css" rel="stylesheet" type="text/css">
 		<link href="stylesheets/style.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="stylesheets/w3.css">
 	</head>
 	<body>
 		<header>
@@ -19,12 +20,16 @@
 		<div class="container">
 			<div class="container-libarc-left">
 				<p class="ma">LIBRARIES</p>
-				<p class="center-libarc" style="font-family: Open Sans; margin-bottom:3.6em;">Libraries hold data on and about books. I am interested in contextualizng, identifying, accessing, parsing, automating, wrangling and analzing this data using programming, reference and teaching technologies.</p>
-					<ul class="libraries">
-						<li><button class="button libraries1">Reference and Instruction</button></li>
-						<li><button class="button libraries2">XML and JSON</button></li>
-						<li><button class="button libraries3"><li>Python</button</li>
-					</ul>
+				<p class="center-libarc" style="font-family: Open Sans; margin-bottom:3.6em;">Libraries hold vast amounts of information and data. I am interested in helping people find, use and evaluate this information through reference and instruction but also contextualizng, identifying, accessing, parsing, automating, wrangling and analzing this data using programming technologies.</p>
+					<div class="w3-accordion w3-white">
+						<button onclick="myFunction('1')" class="w3-btn w3-white w3-border w3-border-grey w3-hover-light-grey">Reference and Instruction</button><br><br>
+						<div id="1" class="w3-accordion-content w3-container">
+    					<p>Atque <a href="https://github.com/Nat34" target="_blank">Github</a> consequatur maiores excepturi dolorem sunt dolorem. In tenetur reiciendis animi quia. Sit et distinctio sunt cumque modi et eum explicabo. Mollitia voluptatem incidunt temporibus. Voluptas tenetur cupiditate nisi aut. Aliquam consequatur id mollitia fuga accusamus et hic.</p>
+    					<p>Atque consequatur maiores excepturi dolorem sunt dolorem. In tenetur reiciendis animi quia. Sit et distinctio sunt cumque modi et eum explicabo. Mollitia voluptatem incidunt temporibus. Voluptas tenetur cupiditate nisi aut. Aliquam consequatur id mollitia fuga accusamus et hic.</p>
+  						</div>
+						<button onclick="myFunction('2')" class="w3-btn w3-white w3-border w3-border-grey w3-hover-light-grey">XML and JSON</button><br><br>
+						<button onclick="myFunction('3')" class="w3-btn w3-white w3-border w3-border-grey w3-hover-light-grey">Python</button>
+					</div>
 				</div>
 			</div>
 			<div class="container-libarc-center">
@@ -46,5 +51,15 @@
 				</ul></div>
 			</div>
 			</main>
+			<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
 		</body>
 	</html>
