@@ -41,13 +41,13 @@ p.center-libarc {
 }
 
 main {
-	height: 520px;
-	border-style: solid;
+	/*height: 550px;*/
+	border-top-style: solid;
 	border-width: medium;
-	border-color: pink;
+	border-color: #e7e7e7;
 	margin-right: 15px;
     margin-left: 15px;
-	padding: 50px;
+	padding: 10px 20px 20px 20px;
 }
 
 /*-----------------------------------------------LINKS--------*/
@@ -100,16 +100,16 @@ main a:active {
 
 main div.container-left {
 	float: left;
-	width: 350px;
-	margin: 0px 0px 0px 40px;
-/*	border-style: solid;
+	width: auto;
+	margin: 30px 0px 0px 40px;
+	/*border-style: solid;
 	border-width: medium;
 	border-color: pink;*/
 }
 
 main div.container-right {
 	float: right;
-	margin-right: 40px;
+	margin: 10px 170px 0px 0px;
 	/*width: 650px;
 	height:500px;
 	border-style: solid;
@@ -188,10 +188,10 @@ main div.container-research-right {
 .button {
 	font-family: "Open Sans";
     background-color: #4CAF50; /* Green */
-    border: none;
+    border: #e7e7e7;
     color: white;
-    padding: 16px 32px;
-    width: 100%;
+    padding: 6px 32px;
+    width: auto;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -201,6 +201,18 @@ main div.container-research-right {
     transition-duration: 0.4s;
     cursor: pointer;
 }
+
+.index {
+    background-color: white;
+    width: 100%;
+    color: black;
+    font-size: 26px;
+    text-align: left;
+    /*border: 2px solid #e7e7e7;*/
+}
+
+.index:hover {
+    background-color: #e7e7e7;}
 
 .libraries1, .libraries2, .libraries3 {
     background-color: white;
@@ -234,6 +246,7 @@ main div.container-research-right {
     background-color: white;
     color: black;
     border: 2px solid #e7e7e7;
+    width: 100%;
 }
 
 .about1:hover, .about2:hover {
