@@ -33,6 +33,7 @@ Task List
 * w3-container used for HTML container elements; `<div>` `<form>` etc
 * provides equality with commonality in margins, paddings, vert/horz align, fonts and colors
 * class can be used to display panels, borders, notes
+* border property: spacing between the padding and the margin
 ```
 <div class="w3-container w3-pale-blue w3-leftbar w3-border-blue">
 <div class="w3-container w3-pale-red w3-border">```		
@@ -55,6 +56,6 @@ w3-padding-ver-number classes adds vertical (left and right)
 
 w3-margin; w3-margin-bottom; w3-margin-left; w3-margin-right; w3-margin-top
 
-* Border Property:  spacing between the padding and the margin
-* Border Classes:
-
+* Sizing Classes: w3-tiny, small, medium, large, xlarge
+* Float Classes: w3-left, right
+* Show/Hide Classes: w3-hide-small, medium, large (hidden from phone, tablet, large)

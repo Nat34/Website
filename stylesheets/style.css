@@ -1,8 +1,3 @@
-* {
-    box-sizing: border-box;
-}
-
-/*-------------------------------------UNIVERSE ABOVE--------*/
 
 main, header {
 	font-family: "Open Sans", Monospace;
@@ -17,7 +12,7 @@ header, p.header, nav {
 
 header p.header {
 	float: left;
-	margin-left: 40px;
+	margin: 20px 0 0 40px;
 }
 
 header nav {
@@ -31,13 +26,12 @@ p.header {
 
 /*---------------------------------------------MAIN--------*/
 
-p.ma {
+.ma {
 	font-size: 26px;
 }
 
-p.center-libarc {
+.center-libarc {
 	font-family: "Open Sans";
-	text-align:none;
 }
 
 main {
@@ -45,8 +39,7 @@ main {
 	border-top-style: solid;
 	border-width: medium;
 	border-color: #e7e7e7;
-	margin-right: 15px;
-    margin-left: 15px;
+	margin: 0 15px 0 15px;
 	padding: 10px 20px 20px 20px;
 }
 
@@ -77,39 +70,58 @@ header nav a:visited {
 
 /* unvisited link */
 main a:link {
-    color: black;
+    color: red;
     text-decoration: none;
 }
 
 /* visited link */
 main a:visited {
-    color: black;
+    color: blue;
 }
 
 /* mouse over link */
 main a:hover {
-    color: white;
+    color: red;
 }
 
 /* selected link */
 main a:active {
-    color: white;
+    color: red;
 }
 
 /*------------------------------------------------MAIN INDEX--*/
 
-main div.container-left {
+.container-left {
 	float: left;
 	width: auto;
-	margin: 30px 0px 0px 40px;
+	margin: 30px 0 0 40px;
 	/*border-style: solid;
 	border-width: medium;
 	border-color: pink;*/
 }
 
-main div.container-right {
+.container-right {
 	float: right;
-	margin: 10px 170px 0px 0px;
+	margin: 0 170px 0 0;
+	/*width: 650px;
+	height:500px;
+	border-style: solid;
+	border-width: medium;
+	border-color: pink;*/
+}
+
+/*------------------------------------------------MAIN BIKE--*/
+
+.container-bike-left {
+	float: left;
+	width: 300px;
+	/*border-style: solid;
+	border-width: medium;
+	border-color: pink;*/
+}
+
+.container-bike-right {
+	float: right;
 	/*width: 650px;
 	height:500px;
 	border-style: solid;
@@ -119,7 +131,7 @@ main div.container-right {
 
 /*-----------------------------------------------MAIN LIBARC--*/
 
-main div.container-libarc-left {
+.container-libarc-left {
 	float: left;
 	width: 30%;;
 	/*border-style: solid;
@@ -127,7 +139,7 @@ main div.container-libarc-left {
 	border-color: pink;*/
 }
 
-main div.container-libarc-center {
+.container-libarc-center {
 	margin-left: 5%;
 	display: inline-block; 
 	width: 30%;
@@ -136,7 +148,7 @@ main div.container-libarc-center {
 	border-color: pink;*/
 }
 
-main div.container-libarc-right {
+.container-libarc-right {
 	float: right;
 	width: 30%;
 	/*border-style: solid;
@@ -146,7 +158,7 @@ main div.container-libarc-right {
 
 /*-----------------------------------------------MAIN ABOUT--*/
 
-main div.container-about-left {
+.container-about-left {
 	float: left;
 	width: 60%;
 	/*border-style: solid;
@@ -154,7 +166,7 @@ main div.container-about-left {
 	border-color: pink;*/
 }
 
-main div.container-about-right {
+.container-about-right {
 	float: right;
 	width: 30%;
 	margin-top: 100px;
@@ -164,25 +176,62 @@ main div.container-about-right {
 	border-color: pink;*/
 }
 
+/*-----------------------------------------------MAIN ABOUT-CV--*/
+
+.container-about-cv-left {
+	float: left;
+	padding: 0 90px 0 0;
+	border-right-style: solid;
+	border-right-width: medium;
+	border-right-color: #e7e7e7;
+}
+
+.container-about-cv-right {
+	float: left;
+}
+
 /*-----------------------------------------------MAIN RESEARCH--*/
 
-main div.container-research-left {
-	display: inline-block;
-    width:  400px;
-    height: 100px;
-    margin: 10px;
-    text-align: center;
-	border: medium solid pink;
+.container-research-left {
+	float: left;
+	width: 60%;
+	/*border-style: solid;
+	border-width: medium;
+	border-color: pink;*/
 }
 
-main div.container-research-right {
+.container-research-right {
 	float: right;
-	width: 60%;
+	width: 30%;
+	/*border-style: solid;
+	border-width: medium;
+	border-color: pink;*/
+}
+
+/*-----------------------------------------------MAIN WEB--*/
+
+.container-web-left {
+	float:left;
+	width: 40%;
+
+}
+
+.container-web-right {
+	float: right;
+	margin: 0 20px 0 0;
+	/*width: 650px;
+	height:500px;
 	border-style: solid;
 	border-width: medium;
-	border-color: pink;
+	border-color: pink;*/
 }
 
+/*------------------------------------------------MAIN CV--*/
+
+.container-cv {
+	float:left;
+	width: 400px;
+}
 /*------------------------------------------------BUTTONS--*/
 
 .button {
@@ -208,74 +257,60 @@ main div.container-research-right {
     color: black;
     font-size: 26px;
     text-align: left;
-    /*border: 2px solid #e7e7e7;*/
 }
 
 .index:hover {
-    background-color: #e7e7e7;}
-
-.libraries1, .libraries2, .libraries3 {
-    background-color: white;
+    background-color: #e7e7e7;
     color: black;
-    border: 2px solid #e7e7e7;
-}
-
-.libraries1:hover,.libraries2:hover,.libraries3:hover {
-	background-color: #e7e7e7;}
-
-.archives1, .archives2, .archives3 {
-    background-color: white;
-    color: black;
-    border: 2px solid #e7e7e7;
-}
-
-.archives1:hover,.archives2:hover,.archives3:hover {
-	background-color: #e7e7e7;}
-
-.lgbtqi1, .lgbtqi2, .lgbtqi3 {
-    background-color: white;
-    color: black;
-    border: 2px solid #e7e7e7;
-}
-
-.lgbtqi1:hover, .lgbtqi2:hover, .lgbtqi3:hover {
-	background-color: #e7e7e7;
 }
 
 .about1, .about2 {
     background-color: white;
     color: black;
     border: 2px solid #e7e7e7;
-    width: 100%;
 }
-
+ 
 .about1:hover, .about2:hover {
 	background-color: #e7e7e7;
+	color: black;
 }
 
 /*-----------------------------------------------LISTS--*/
 
-ul.libraries {
+.libraries {
 	list-style-type:none;
 	padding-left:0;
 }
 
-ul.archives {
+.archives {
 	list-style-type:none;
 	padding-left:0;
 }
 
-ul.lgbtqi {
+.lgbtqi {
 	list-style-type:none;
 	padding-left:0;
 }
 
-ul.about {
+.about {
 	list-style-type:none;
 	padding-left:0;
 }
 
-/*-----------------------------------------------RESPONSIVE--*/
+.cv {
+	list-style-type:none;
+	padding-left:0;
+}
+
+/*-----------------------------------------------FULL IMAGE BACKGROUND--*/
+
+html { 
+  background: url(images/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 /* 
 
