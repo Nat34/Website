@@ -1,23 +1,124 @@
 <!doctype html>
-<html>
+<html lang="en-US">
 	<head>
+		<!--LINKS-->
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
-		<title>Nathan Thomas | Smile</title>
-		<link href="stylesheets/reset.css" rel="stylesheet" type="text/css">
 		<link href="stylesheets/style.css" rel="stylesheet" type="text/css">
+		<link href="stylesheets/w3.css" rel="stylesheet">
+		<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+		<!--META-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<title>Nathan Thomas | Web Coding Projects</title>
 	</head>
+		<!--<style>
+html { 
+  background: url(images/agave-silk-plant-permanent-tree-green.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+	</style>-->
+	<!--BODY-->
 	<body>
 		<header>
 			<p class="header"><a href="index.html">NATHAN THOMAS</a></p>
 			<nav>
 				<a href="index.html">Home</a> |
 				<a href="about.html">About</a> |
-				<a href="https://github.com/Nat34" target="_blank">Github</a>
+				<a href="https://github.com/Nat34" target="_blank">Github</a> |
+				<a href="bike.html"><i class="fa fa-bicycle" style="font-size:24px"></i></a>
 			</nav>
 		</header>
-		<main>
-		<div class="container">
+<main>
+	<div class="w3-row">
+		<div class="w3-col s12 m12 l4">
+			<p class="ma">WEB CODING PROJECTS</p>
+			<div class="w3-accordion w3-white">
+				<button onclick="myFunction('1')" class="w3-btn-block w3-white w3-border w3-border-grey w3-hover-light-grey">Archival Data</button><br><br>
+					<div id="1" class="w3-accordion-content w3-container">
+						<p>I am interested in extracting archival data from primary source materials into a tabular format, cleaning it and analzying it.  During my time at Dollar Bank corporate archives I used ArcGIS, OpenRefine and Google Maps web services to reinterpret messy tabular data and visualize it onto a georeferenced map.</p><p><a href="http://www.arcgis.com/home/item.html?id=a475b7e4254247a394e9e5dc9a171071" target="blank">Dollar Bank Data Map</a></p>
+					</div>
+				<button onclick="myFunction('2')" class="w3-btn-block w3-white w3-border w3-border-grey w3-hover-light-grey">Research Support Tools</button><br><br>
+					<div id="2" class="w3-accordion-content w3-container">
+						<p>In Progress</p>
+					</div>
+				<button onclick="myFunction('3')" class="w3-btn-block w3-white w3-border w3-border-grey w3-hover-light-grey">Search Tools</button><br><br>
+					<div id="3" class="w3-accordion-content w3-container">
+						<p>In Progress</p>
+					</div>
+				<button onclick="myFunction('4')" class="w3-btn-block w3-white w3-border w3-border-grey w3-hover-light-grey">Web Accessibility</button><br><br>
+					<div id="4" class="w3-accordion-content w3-container">
+						<p>Delivering web services and providing access to web content to people with disabilities is of great importance to me as an artist and information professional.  I am striving to incorporate the essential components of accessibility into my web development and digital art practices.</p>
+						<p>To better serve those with disabilities I am taking W3C Web Accessibility Initiative recommendations for design, writing and developing for web accessibility.</p>
+					</div>
+			</div><!--content accordian div-->
 		</div>
-		</main>
-	</body>
+		<div class="w3-col w3-center w3-hide-small w3-hide-medium s12 m12 l8 w3-padding-jumbo w3-padding-hor-64">
+			<img src="images/agave-silk-plant-permanent-tree-green.jpg" alt="image of an agave silk plant" style="width:95%;height:95%;"></img>
+		</div>
+
+	</div><!--row div-->
+</main>
+			<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+</body>
 </html>
+
+
+
+<!--
+Web "content" generally refers to the information in a web page or web application, including:
+
+    natural information such as text, images, and sounds
+    code or markup that defines structure, presentation, etc.
+
+WCAG is primarily intended for:
+
+    Web content developers (page authors, site designers, etc.)
+    Web authoring tool developers
+    Web accessibility evaluation tool developers
+    Others who want or need a standard for web accessibility
+
+What is in WCAG 2.0
+12 guidelines that are organized under 4 principles: perceivable, operable, understandable, and robust.
+testable success criteria, which are at three levels: A, AA, and AAA.
+
+at a glance:
+
+Perceivable
+
+    Provide text alternatives for non-text content.
+    Provide captions and other alternatives for multimedia.
+    Create content that can be presented in different ways,
+    including by assistive technologies, without losing meaning.
+    Make it easier for users to see and hear content.
+
+Operable
+
+    Make all functionality available from a keyboard.
+    Give users enough time to read and use content.
+    Do not use content that causes seizures.
+    Help users navigate and find content.
+
+Understandable
+
+    Make text readable and understandable.
+    Make content appear and operate in predictable ways.
+    Help users avoid and correct mistakes.
+
+Robust
+
+    Maximize compatibility with current and future user tools.
+-->
+
+			

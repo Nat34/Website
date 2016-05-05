@@ -1,31 +1,74 @@
 <!doctype html>
-<html>
+<html lang="en-US">
 	<head>
+		<!--LINKS-->
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
-		<title>Nathan Thomas | Smile</title>
-		<link href="stylesheets/reset.css" rel="stylesheet" type="text/css">
 		<link href="stylesheets/style.css" rel="stylesheet" type="text/css">
+		<link href="stylesheets/w3.css" rel="stylesheet">
+		<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+		<!--META-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<title>Nathan Thomas | Research</title>
 	</head>
+		<!--<style>
+html { 
+  background: url(images/research.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+	</style>-->
 	<body>
 		<header>
 			<p class="header"><a href="index.html">NATHAN THOMAS</a></p>
 			<nav>
 				<a href="index.html">Home</a> |
 				<a href="about.html">About</a> |
-				<a href="https://github.com/Nat34" target="_blank">Github</a>
+				<a href="https://github.com/Nat34" target="_blank">Github</a> |
+				<a href="bike.html" target="_blank"><i class="fa fa-bicycle" style="font-size:24px"></i></a>
 			</nav>
 		</header>
 		<main>
-		<div class="container">
-			<div class="container-research-left">
-			<p class="ma">SUPPORT STRUCTURES</p>
-			</div>
-			<br>
-			<div class="container-research-left">
-			<p class="ma">SOFTWARE STUDIES</p>
-			</div>
+	<div class="w3-row">
+<div class="w3-col s12 m12 l4">
+		<p class="ma">RESEARCH INTERESTS</p>
+			<div class="w3-accordion w3-white">
+				<button onclick="myFunction('1')" class="w3-btn-block w3-white w3-border w3-border-grey w3-hover-light-grey">Support Structures</button><br><br>
+				<div id="1" class="w3-accordion-content w3-container">
+					<p>I am interested in the support structures existing in the areas of information science and the visual arts - those things which frame, present, and construct and those which guide, organize and facilitate.</p>
+				</div>
+				<button onclick="myFunction('2')" class="w3-btn-block w3-white w3-border w3-border-grey w3-hover-light-grey">Software Studies</button><br><br>
+				<div id="2" class="w3-accordion-content w3-container">
+					<p></p>
+				</div>
+				<button onclick="myFunction('3')" class="w3-btn-block w3-white w3-border w3-border-grey w3-hover-light-grey">Digital Arts</button><br><br>
+				<div id="3" class="w3-accordion-content w3-container">
+					<p></p>
+				</div>
+				<button onclick="myFunction('4')" class="w3-btn-block w3-white w3-border w3-border-grey w3-hover-light-grey">Digital Humanities</button><br><br>
+				<div id="4" class="w3-accordion-content w3-container">
+				<p>As part of my graduate studies I conducted scholrly inquiry and service evaluation in the field of library and information science.  I designed and planned a research study from conceptualization to proposal writing using scientific research methods and used evidence-based practice to support decision making.  Along with developing an overview and understanding of social science research methods, I broadened my understanding of Digital Humanaties research and Digital Scholarship Services offered within academic libraries.</p>
 
+				<p>
+				</div>
 		</div>
-		</main>
-	</body>
+		</div>
+		<div class="w3-col w3-center w3-hide-small w3-hide-medium s12 m12 l8 w3-padding-jumbo w3-padding-hor-64">
+			<img src="images/research.jpg" alt="image of computer" style="width:90%;height:90%"></img>
+		</div>
+	</div><!--row div-->
+</main>
+			<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+</body>
 </html>
